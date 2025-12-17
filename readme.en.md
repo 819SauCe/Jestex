@@ -2,9 +2,9 @@
   <a href="./readme.md">🇧🇷 Português</a> | 🇺🇸 English
 </p>
 
-# Jestex
+# Jesterx
 
-Jestex is a **SaaS page builder**. The initial version (v1) will be open and public on GitHub, serving both as a functional product and as a technical experiment. The project focuses on **code simplicity**, hands-on learning, and idea validation. It exists to test my skills with **Golang**, study scalable architecture, and, if possible, generate revenue in the future.
+Jesterx is a **SaaS page builder**. The initial version (v1) will be open and public on GitHub, serving both as a functional product and as a technical experiment. The project focuses on **code simplicity**, hands-on learning, and idea validation. It exists to test my skills with **Golang**, study scalable architecture, and, if possible, generate revenue in the future.
 
 ### Stack and Technical Decisions
 

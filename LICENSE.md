@@ -1,4 +1,4 @@
-Jestex Source Available License (JSAL)
+Jesterx Source Available License (JSAL)
 
 Copyright (c) 2025 ViitoJooj
 
@@ -50,7 +50,7 @@ Pull requests are welcome, but the project owner retains full control over if an
 
 ## Open Core Notice
 
-Jestex follows an **open core** model.
+Jesterx follows an **open core** model.
 
 Parts of the system may remain private or become proprietary in the future. This repository represents the open portion of the project at its current stage.
 
