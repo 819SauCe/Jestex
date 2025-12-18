@@ -68,3 +68,12 @@ func SetAuthCookie(c *gin.Context, token string, time int) {
 		true,
 	)
 }
+
+// GetLoginDuration returns the appropriate cookie duration in hours based on the keep_me_logged_in flag
+// Returns 24 hours for temporary login, 744 hours (31 days) for persistent login
+func GetLoginDuration(keepMeLoggedIn bool) int {
+	if !keepMeLoggedIn {
+		return 24
+	}
+	return 744
+}
