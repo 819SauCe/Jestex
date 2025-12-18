@@ -5,8 +5,6 @@ import (
 	"gen-you-ecommerce/config"
 )
 
-// UserHasTenantAccess checks if a user has access to a specific tenant and returns their role
-// Returns (hasAccess bool, role string, error)
 func UserHasTenantAccess(userID, tenantID string) (bool, string, error) {
 	db := config.DB
 	var role string

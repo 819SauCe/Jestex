@@ -1,6 +1,5 @@
 package responses
 
-// UserData represents the common user data structure used across all user-related responses
 type UserData struct {
 	Id         string `json:"id"`
 	ProfileImg string `json:"profile_img"`

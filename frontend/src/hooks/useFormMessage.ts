@@ -12,9 +12,6 @@ export interface UseFormMessageReturn {
   clearMessage: () => void;
 }
 
-/**
- * Custom hook for managing form messages and status
- */
 export function useFormMessage(): UseFormMessageReturn {
   const [message, setMessage] = useState<string>('');
   const [status, setStatus] = useState<MessageStatus>(null);

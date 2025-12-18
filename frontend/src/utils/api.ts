@@ -11,9 +11,6 @@ export interface ApiError {
   status?: number;
 }
 
-/**
- * Generic API client for making authenticated requests
- */
 export async function apiRequest<T = any>(
   endpoint: string,
   options: RequestInit = {}
@@ -53,9 +50,6 @@ export async function apiRequest<T = any>(
   }
 }
 
-/**
- * POST request helper
- */
 export async function post<T = any>(
   endpoint: string,
   body: any
@@ -66,9 +60,6 @@ export async function post<T = any>(
   });
 }
 
-/**
- * GET request helper
- */
 export async function get<T = any>(
   endpoint: string
 ): Promise<ApiResponse<T>> {
@@ -77,9 +68,6 @@ export async function get<T = any>(
   });
 }
 
-/**
- * PUT request helper
- */
 export async function put<T = any>(
   endpoint: string,
   body: any
@@ -90,9 +78,6 @@ export async function put<T = any>(
   });
 }
 
-/**
- * DELETE request helper
- */
 export async function del<T = any>(
   endpoint: string
 ): Promise<ApiResponse<T>> {

@@ -1,23 +1,14 @@
-/**
- * Validation utilities for form inputs
- */
-
 export interface ValidationResult {
   isValid: boolean;
   error?: string;
 }
 
-// Regex patterns for validation
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const UPPERCASE_REGEX = /[A-Z]/;
 const LOWERCASE_REGEX = /[a-z]/;
 const DIGIT_REGEX = /[0-9]/;
-// Special characters allowed in passwords
 const SPECIAL_CHAR_REGEX = /[!@#$%^&*()_+\-=[\]{}:,.?]/;
 
-/**
- * Validates an email address
- */
 export function validateEmail(email: string): ValidationResult {
   if (!email) {
     return { isValid: false, error: 'Email is required' };
@@ -30,9 +21,6 @@ export function validateEmail(email: string): ValidationResult {
   return { isValid: true };
 }
 
-/**
- * Validates a password
- */
 export function validatePassword(password: string): ValidationResult {
   if (!password) {
     return { isValid: false, error: 'Password is required' };
@@ -61,9 +49,6 @@ export function validatePassword(password: string): ValidationResult {
   return { isValid: true };
 }
 
-/**
- * Validates that password confirmation matches
- */
 export function validatePasswordConfirmation(
   password: string,
   confirmPassword: string
@@ -79,9 +64,6 @@ export function validatePasswordConfirmation(
   return { isValid: true };
 }
 
-/**
- * Validates that a required field is not empty
- */
 export function validateRequired(value: string, fieldName: string): ValidationResult {
   if (!value || value.trim() === '') {
     return { isValid: false, error: `${fieldName} is required` };
