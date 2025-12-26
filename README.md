@@ -144,6 +144,8 @@ cd frontend
 3. Commit suas alterações
 4. Abra um Pull Request
 
+Na duvida olhe o <a href="./CONTRIBUTING.md">CONTRIBUTING.md</a>
+
 ## Licença
 
 Este projeto está licenciado conforme o arquivo <a href="LICENSE.md">LICENSE.md</a>
